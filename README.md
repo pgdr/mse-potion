@@ -43,7 +43,7 @@ $\Omega(n^2 \cdot k)$ to $O(k \cdot n \log n)$.
 Computing the sum of pairwise differences in a segment can be done in a cute way.
 First, since $(x_i-x_j)^2 = x_i^2 + x_j^2 - 2x_ix_j$, by summing over all $i < j$, we get
 
-$$\sum_{i<j}(x_i-x_j)^2 = (k-1)\sum_t x_t^2 - 2\sum_{i<j} x_ix_j$$
+$$\sum_{i<j}(x_i-x_j)^2 = (k-1)\sum_{t} x_t^2 - 2\sum_{i<j} x_ix_j$$
 
 where $k = j - i$, i.e., the number of elements we're summing over.  But note that
 
